@@ -3493,7 +3493,7 @@
 		(embedded_fonts no)
 	)
 	(gr_rect
-		(start 69.85 32.258)
+		(start 69.85 45)
 		(end 86.36 64.77)
 		(stroke
 			(width 0.05)
