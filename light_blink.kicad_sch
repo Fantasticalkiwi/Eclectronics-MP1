@@ -1756,6 +1756,12 @@
 		(uuid "2d3e5916-d82e-48dd-9b8a-712627899127")
 	)
 	(junction
+		(at 118.11 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4489a7b3-1fc3-4455-b792-8f2dede38f03")
+	)
+	(junction
 		(at 134.62 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1868,6 +1874,16 @@
 			(type default)
 		)
 		(uuid "3d450094-dcf1-4ccf-a84e-dc3b33351ef3")
+	)
+	(wire
+		(pts
+			(xy 118.11 63.5) (xy 124.46 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eed64eb-7b65-4860-8994-8abb576295fd")
 	)
 	(wire
 		(pts
@@ -2031,7 +2047,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 63.5) (xy 124.46 63.5)
+			(xy 115.57 63.5) (xy 118.11 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2240,6 +2256,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 118.11 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25addee9-c8a1-465c-9b1c-8e22129208bf")
+		(property "Reference" "C2"
+			(at 121.92 66.0399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ".1UF"
+			(at 121.92 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 119.0752 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 118.11 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79004f29-3f62-432a-9822-68a19a975300")
+		)
+		(pin "2"
+			(uuid "85e6735b-6163-48af-95c8-f229260efa96")
+		)
+		(instances
+			(project "light_blink"
+				(path "/4ddc1785-0852-42e4-b306-3ee70128813c"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 179.07 87.63 270)
 		(unit 1)
@@ -2394,6 +2492,84 @@
 			(project "light_blink"
 				(path "/4ddc1785-0852-42e4-b306-3ee70128813c"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b4eeb7a-f387-43ef-b05b-0e69428556f2")
+		(property "Reference" "#PWR06"
+			(at 118.11 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "471048c7-38bd-4a58-a1ef-d936779609a3")
+		)
+		(instances
+			(project "light_blink"
+				(path "/4ddc1785-0852-42e4-b306-3ee70128813c"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
